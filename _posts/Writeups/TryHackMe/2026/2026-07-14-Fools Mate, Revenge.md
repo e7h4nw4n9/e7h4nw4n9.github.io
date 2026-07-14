@@ -1,4 +1,6 @@
 ---
+layout: post
+title: Fools Mate, Revenge
 URL: https://tryhackme.com/room/foolsm8v2
 Difficulty: Medium
 tags:
@@ -59,7 +61,12 @@ tags:
 首先通过 `/api/settings` 接口来修改 `session.config.unlocked` 的值，使用如下的恶意参数：
 
 ```json
-{"theme":"forest","pieceSet":"outline","animationMs":180, "constructor": {"prototype": {"unlocked": true}}}
+{
+  "theme": "forest",
+  "pieceSet": "outline",
+  "animationMs": 180,
+  "constructor": { "prototype": { "unlocked": true } }
+}
 ```
 
 使用 curl 命令来请求接口：

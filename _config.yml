@@ -1,0 +1,7 @@
+title: e7h4n's blog
+lang: zh-CN
+
+theme: minima
+markdown: kramdown
+
+permalink: /posts/:year/:month/:day/:title/
